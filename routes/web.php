@@ -21,8 +21,16 @@ Route::get('/', function () {
 });
 
 Route::get('/registro', [RegisterController::class,'index'])->name('register');
-Route::get('/', [RegisterController::class,'index']);
 Route::post('/registro', [RegisterController::class,'store']);
 
+Route::get('/{users}/actualizar',[PostController::class,'actualizar'])->name('actualizar');
 
-Route::get('', [PostController::class, 'index'])->name('post.index');
+Route::put('/{users}',[PostController::class,'update'])->name('editar');
+Route::delete('/{user}',[PostController::class,'destroy'])->name('eliminar');
+
+
+Route::get('/', [PostController::class, 'index'])->name('post.index');
+
+Route::get('/export_user_pdf',[PostController::class,'export_user_pdf'])->name('export_user_pdf');
+Route::get('/export-user/{id}', [PostController::class,'export_user'])->name('export_user');
+

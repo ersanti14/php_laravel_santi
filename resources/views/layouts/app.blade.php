@@ -13,7 +13,7 @@
     <header>
         <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-gray-200">
-                <a href="#" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <span class="self-center font-bold whitespace-nowrap dark:text-black text-center text-2xl">CRUD SANTI</span>
                 </a>
                 <button data-collapse-toggle="navbar-dropdown" type="button"
